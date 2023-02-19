@@ -1,0 +1,224 @@
+/*---------------------------------стиль страницы------------------*/
+
+/*основная секция*/
+.section-one{
+	font-family: sans-serif;
+	font-size: 18px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+	/*background-color:bisque;*/
+	background-color: darkslateblue;
+}
+
+/*основная секция таблица*/
+.section-one__table{
+	width: 50%;
+	max-width: 50%;
+	background-color:darkslateblue;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	max-height: 100vh;
+	overflow: scroll;
+	border-collapse: collapse;
+}
+
+/*убрать отступы между ячейками*/
+table{
+	border-collapse: collapse;
+}
+/*основная секция подчеркнуть строки*/
+tr{
+	border-bottom: 3px solid darkslateblue;
+}
+
+/*делаем отступы в строках*/
+table th{
+	padding: 10px 0;
+	background-color: #fff;
+	padding-right: 10px;
+	padding-left: 10px;
+
+}
+
+/*при на ведении на заголовок сменить цвет текста*/
+.section-one__thead th:hover{
+	color: beige;
+}
+
+/* оформляем ячейки*/
+table td{
+	padding: 5px 5px 0px 5px;
+	text-align: center;
+	background-color: #fff;
+	
+}
+
+/*закрепляем заголовок*/
+.section-one__thead{
+	position: sticky;
+	top: 32px;
+	
+}
+
+/*основной стиль текста*/
+p{
+	width: 100%;
+	text-align: center;
+	height: 35px;
+	font-weight: bold;
+	color:powderblue;
+}
+
+/*стиль текстовых полей*/
+textarea{
+	width: 95%;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+/*----------------в колонке 3 ограничить тест до 2 строк-------------*/
+.about{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+/*----------------в колонке 3 ограничить тест до 2 строк конец-------------*/
+
+/* покрасить ячейки заголовка*/
+.section-one__thead th{
+	background-color: darkslateblue;
+	color:powderblue;
+}
+
+
+/*секция с формой*/
+.section-one__info{
+	width: 50%;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color:darkslateblue;
+
+
+}
+
+
+/*----------------------------- стили работы с кнопками и блоков с кнопками --------*/
+.section-one__button{
+	display: flex;
+	justify-content: center;
+	position: sticky;
+	padding-bottom: 10px;
+	top: 0;
+	/*background-color:lightsteelblue;*/
+	background-color:darkslateblue;
+	width: 100%;
+}
+
+button{
+	margin-left: 5px;
+	margin-right: 5px;
+	background-color:darkslateblue;
+	color:powderblue;
+
+}
+
+button:hover{/* при наведении*/
+	font-weight: bolder;
+}
+
+.section-one__button-info button{
+	border: 3px solid powderblue;
+	border-radius: 5px;
+}
+
+
+.section-one__button-info{
+	display: flex;
+	justify-content: center;
+	background-color:darkslateblue;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+/*----------------------- стили работы с кнопками и блоков с кнопками конец--------*/
+
+/* стили для приветсвия (введите строку)--------------*/
+.section-one__greeting{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top:10%;
+	width: 50%;
+	height: 50%;
+	font-size:30px;
+}
+
+.section-one__greeting p{
+	text-align: center;
+	background-color:darkslateblue;
+
+
+}
+/* стили для приветсвия (введите строку) КОНЕЦ--------------*/
+
+
+/*про медиа запросы в тз не было сделал для красоты чтобы не телефоне не смотрелось криво)))-----------------------/*
+
+/*-----------------------------------------------------медиа  >1023 px----------------------------------------------------------*/
+@media (max-width: 1023px) {
+	.section-one {
+		font-size: 14px;
+	}
+		.section-one__greeting p {
+			font-size: 16px;
+
+		}
+}
+/*-----------------------------------------------------медиа  >800 px----------------------------------------------------------*/
+@media (max-width: 800px) {
+	.section-one {
+		font-size: 13px;
+	}
+
+	.section-one__greeting p {
+		font-size: 14px;
+
+	}
+}
+
+
+/*-----------------------------------------------------медиа  >725 px----------------------------------------------------------*/
+@media (max-width: 725px) {
+	.section-one {
+		flex-wrap: wrap;
+	}
+	.section-one__info {
+			width: 100%;
+
+		}
+	.section-one__table {
+			width: 100%;
+			max-width: 100%;
+}
+	.section-one__greeting {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-top: 10%;
+		width: 100%;
+        padding-top: 10px;
+	}
+
+}
+/*---------------------------------------------------медиа запросы конец--------------------------------------------------*/
+
+
+
+

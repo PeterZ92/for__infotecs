@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/null.css">
+	<link rel="stylesheet" href="/css/styles.css">
+	<title>test</title>
+</head>
+
+<body>
+
+	<section  class="section-one">		
+		<div class="section-one__table">
+			<div class="section-one__button" id="S_one">
+				<!--див для кнопок из скрипта. -->
+			</div>
+			<table class="section-one__tablee" id="tableee">
+				<thead class="section-one__thead" >
+					<tr>
+						<th onclick="sort_row(0)">Имя (firstName)</th>
+						<th onclick="sort_row(1)">Фамилия (lastName)</th>
+						<th onclick="sort_row(2)">Описание (about)</th>
+						<th onclick="sort_row(3)">Цвет глаз (eyeColor)</th>
+					</tr>
+				</thead>
+				<div></div>
+				<tbody class="section-one__tbody" id="data-output">
+					<!-- тело для таблицы из скрипта -->
+				</tbody>
+			</table>
+		</div>
+		<!-- форма -->
+		<form class="section-one__info" id="s_f">
+			<p>Name</p>
+			<textarea class="section-one__ta" id="texts1">))))))))</textarea>
+			<p>flstName</p>
+			<textarea class="section-one__ta" id="texts2">))))))))</textarea>
+			<p>about</p>
+			<textarea class="section-one__ta" id="texts3">))))))))</textarea>
+			<p>eyeColor</p>
+			<textarea class="section-one__ta" id="texts4">))))))))</textarea>
+			<div class="section-one__button-info">
+				<button class="section-one__button-save" type="button" onclick="save_row()">сохранить</button>
+				<button class="section-one__button-cancel" type="button" onclick="cancel_row()">отменить</button>
+			</div>
+		</form>
+		<!-- форма конец-->
+		<div class="section-one__greeting">
+			<p>Выберите строку!</p>
+		</div>
+	</section>
+
+	<!-- подключение скриптов начало -->
+	<script src="/script/script.js"></script>
+	<script src="/script/tablerow_script.js"></script>
+	<script src="/script/b_click.js"></script>
+	<script src="/script/save_rows.js"></script>
+	<script src="/script/cancel_rows.js"></script>
+	<script src="/script/sort_rows.js"></script>
+	<!-- подключение скриптов конец -->
+</body>
+
+</html>
