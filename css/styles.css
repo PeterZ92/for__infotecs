@@ -32,7 +32,7 @@ table{
 }
 /*основная секция подчеркнуть строки*/
 tr{
-	border-bottom: 3px solid darkslateblue;
+	border-bottom: 2px solid darkslateblue;
 }
 
 /*делаем отступы в строках*/
@@ -60,18 +60,21 @@ table td{
 /*закрепляем заголовок*/
 .section-one__thead{
 	position: sticky;
-	top: 32px;
+	top:20px;
 	
 }
 
-/*основной стиль текста*/
+/*основной стиль параграфа*/
 p{
 	width: 100%;
 	text-align: center;
-	height: 35px;
+	padding-top: 20px;
+	padding-bottom: 5px;
 	font-weight: bold;
 	color:powderblue;
 }
+
+
 
 /*стиль текстовых полей*/
 textarea{
@@ -114,7 +117,7 @@ textarea{
 	display: flex;
 	justify-content: center;
 	position: sticky;
-	padding-bottom: 10px;
+	/*padding-bottom: 20px;*/
 	top: 0;
 	/*background-color:lightsteelblue;*/
 	background-color:darkslateblue;
@@ -191,6 +194,11 @@ button:hover{/* при наведении*/
 		font-size: 14px;
 
 	}
+}
+
+.section-one__thead {
+	top: 15px;
+
 }
 
 
